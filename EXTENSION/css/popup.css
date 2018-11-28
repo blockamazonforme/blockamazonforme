@@ -1,0 +1,114 @@
+@font-face {
+font-family: 'Ostrich Sans Black';
+src: url('ostrich-sans-black.eot'); /* IE9 Compat Modes */
+src: url('ostrich-sans-black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('ostrich-sans-black.woff') format('woff'), /* Modern Browsers */
+url('ostrich-sans-black.ttf') format('truetype'), /* Safari, Android, iOS */
+url('ostrich-sans-black.svg#ostrich-sans-black') format('svg'); /* Legacy iOS */}
+
+
+body, html {
+			font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+			background-color: #ff9900;
+			color: #fff;
+			
+			
+		}
+
+a:link, a:visited, a:hover, a:active  {color: #146EB4;}
+
+.large-text {
+	font-family: 'Ostrich Sans Black';
+	font-size: 24pt;
+	color: #ff9900;
+}
+
+.output-container {
+	  position: absolute;
+ 	 top: 50%;
+  	left: 50%;
+ 	 transform: translate(-50%, -50%);
+	border-radius: 25px;
+	background-color: #fff;
+	width: 100%;
+	max-width: 400px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 40px;
+	box-shadow: 10px 10px #888888;
+}
+
+.title-lg {
+	font-family: 'Ostrich Sans Black';
+	font-size: 24pt;
+	margin:20px 20px 10px 20px;
+}
+#output {
+	word-wrap:break-word;
+	margin: 30px 0px;
+	font-size: 12pt;
+	color: #444;
+	
+}
+
+
+.credit {
+	margin: 20px 0px;
+	font-size: 10pt;
+
+}
+.credit-block {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 10pt;
+
+}
+.container {
+	width: 100%;
+	text-align: center;
+}
+
+.onoffswitch {
+    position: relative; width: 90px;
+	margin: 0px auto;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #146EB4; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
