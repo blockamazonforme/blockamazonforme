@@ -1,8 +1,9 @@
 {
 	"manifest_version": 2,
 	"name": "Block Amazon For Me",
-	"description": "Blocks Amazon For You",
-	"version": "0.1",
+	"description": "Blocks Amazon for you (as well as Amazon-owned subsidiaries including AbeBooks, Audible, Twitch.tv, Whole Foods, Woot, Zappos, etc.)",
+	"version": "0.2",
+	"author": "blockamazonfor.me",
 
 	"permissions": [
     

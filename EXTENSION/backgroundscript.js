@@ -5,6 +5,8 @@ function preventFunc( details ) {
  
 }
 
+
+
 var urlList = [
     "*://a9.com/*",
 "*://www.a9.com/*",
@@ -66,12 +68,25 @@ chrome.runtime.onInstalled.addListener(function(details){
     if(details.reason == "install"){
 		chrome.storage.sync.set({state: true});
 		var thisVersion = chrome.runtime.getManifest().version;
-        //alert("FIRST "+thisVersion);
+        alert("FIRST "+thisVersion);
     }
 });
 
 // RUNS BLOCKER ON LOAD
-chrome.webRequest.onBeforeRequest.addListener( preventFunc, { urls: urlList }, ["blocking"] );
+chrome.storage.sync.get('state', function(data) {
+		  if (data.state === false) {
+			chrome.browserAction.setIcon({path:"iconoff128.png"});
+		
+		  } 
+		  else {
+			chrome.browserAction.setIcon({path:"icon128.png"});
+            chrome.webRequest.onBeforeRequest.addListener( preventFunc, { urls: urlList }, ["blocking"] );
+
+		   }
+});
+
+
+//chrome.webRequest.onBeforeRequest.addListener( preventFunc, { urls: urlList }, ["blocking"] );
 //chrome.webRequest.onBeforeRequest.removeListener( preventFunc );
 
 

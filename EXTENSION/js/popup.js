@@ -1,4 +1,4 @@
-//Changes icon and saved state from toggle 
+
 
 // Does things based on switch states
 function toggleButtonFunc() {
@@ -19,7 +19,7 @@ function toggleButtonFunc() {
 
 // Runs switch function on load
 toggleButtonFunc();
-
+//SwitchFunction();
 
 // Listens to On off switch
 document.getElementById("myonoffswitch").addEventListener("click", mySwitchFunction);
